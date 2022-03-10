@@ -30,6 +30,6 @@ RUN ng build
 
 FROM httpd as server
 
-COPY --from=builder /Mini-project/dist/ /usr/local/apache2/htdocs/
+COPY --from=builder /Mini-project-/dist/ /usr/local/apache2/htdocs/
 
 EXPOSE 80
