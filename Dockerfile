@@ -15,7 +15,7 @@ RUN git clone https://github.com/sudhakar678/Mini-project-.git
 
 
 
-WORKDIR /Mini-project
+WORKDIR /Mini-project-
 
 RUN npm install -g @angular/cli
 
