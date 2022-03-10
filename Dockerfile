@@ -10,12 +10,12 @@ RUN curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
 
 RUN apt -y install nodejs
 
-RUN git clone https://github.com/lakshmanparvathala-cloudside/Angular.git
+RUN git clone https://github.com/sudhakar678/Mini-project-.git
 
 
 
 
-WORKDIR /Angular
+WORKDIR /Mini-project
 
 RUN npm install -g @angular/cli
 
@@ -30,6 +30,6 @@ RUN ng build
 
 FROM httpd as server
 
-COPY --from=builder /Angular/dist/ /usr/local/apache2/htdocs/
+COPY --from=builder /Mini-project/dist/ /usr/local/apache2/htdocs/
 
-EXPOSE 20021
+EXPOSE 80
