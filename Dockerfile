@@ -32,4 +32,4 @@ FROM httpd as server
 
 COPY --from=builder /Mini-project-/dist/ /usr/local/apache2/htdocs/
 
-EXPOSE 20023
+EXPOSE 20024
