@@ -8,4 +8,4 @@ RUN npm run build
 ### STAGE 2: Run ###
 FROM nginx:1.17.1-alpine
 COPY --from=build /tasks-master/dist/ /usr/share/nginx/html
-EXPOSE 20021
+EXPOSE 20020
