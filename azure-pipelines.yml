@@ -13,7 +13,7 @@ steps:
 - task: Npm@1
   inputs:
     command: 'install'
-    workingDir: 'sudhakar678 / Mini-project-'
+    workingDir: 'sudhakar678/Mini-project-'
 - task: SonarQubePrepare@5
   inputs:
     SonarQube: 'Testconnection-sonarqube'
